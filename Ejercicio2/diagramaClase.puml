@@ -1,0 +1,24 @@
+@startuml
+abstract class Empleado{
++ {abstract}calcularSalario(): double
++ mostrarDetalles(): void
+}
+
+class Gerenete{
+- salarioMensual: double
+
++ Gerenete(salarioMensual:double)
++ calcularSalario(): double
+}
+
+class Vendedor{
+- salarioPorHora: double
+- horasTrabajadas: double
+
++ Vendedor(salarioMensual:double, horasTrabajadas: double)
++ calcularSalario(): double
+}
+
+Empleado <|-- Gerenete
+Empleado <|-- Vendedor
+@enduml
