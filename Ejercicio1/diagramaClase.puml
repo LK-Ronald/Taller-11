@@ -8,6 +8,7 @@ class Circulo{
 - radio: double
 - PI : double = 3.141592
 
++ Circulo(radio: double)
 + mostrarArea(): double
 }
 
@@ -15,7 +16,7 @@ class Rectangulo{
 - base: double
 - altura: double
 
-+ Rectangulo()
++ Rectangulo(base: double, altura:double)
 + calcularArea(): double
 }
 
